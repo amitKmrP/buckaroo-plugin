@@ -1,0 +1,236 @@
+{
+    "Currency": "EUR",
+    "AmountDebit": 10.0,
+    "Invoice": "testinvoice1234",
+    "Services": {
+       "ServiceList": [
+         {
+           "Name": "afterpay",
+           "Action": "Pay",
+           "Parameters": [
+             {
+               "Name": "VatPercentage",
+               "Value": ""
+             },
+             {
+               "Name": "Category",
+               "Value": "Company"
+             },
+             {
+               "Name": "CustomerNumber",
+               "Value": ""
+             },
+             {
+               "Name": "PostalCode",
+               "Value": ""
+             },
+             {
+               "Name": "Type",
+               "Value": "Unknown"
+             },
+             {
+               "Name": "StreetNumberAdditional",
+               "Value": ""
+             },
+             {
+               "Name": "ImageUrl",
+               "Value": ""
+             },
+             {
+               "Name": "BankAccount",
+               "Value": ""
+             },
+             {
+               "Name": "BirthDate",
+               "Value": ""
+             },
+             {
+               "Name": "Phone",
+               "Value": ""
+             },
+             {
+               "Name": "LastName",
+               "Value": ""
+             },
+             {
+               "Name": "Street",
+               "Value": ""
+             },
+             {
+               "Name": "VatPercentage",
+               "Value": ""
+             },
+             {
+               "Name": "Salutation",
+               "Value": "Unknown"
+             },
+             {
+               "Name": "Category",
+               "Value": "Company"
+             },
+             {
+               "Name": "ConversationLanguage",
+               "Value": "Unknown"
+             },
+             {
+               "Name": "PostalCode",
+               "Value": ""
+             },
+             {
+               "Name": "Identifier",
+               "Value": ""
+             },
+             {
+               "Name": "GrossUnitPrice",
+               "Value": ""
+             },
+             {
+               "Name": "Street",
+               "Value": ""
+             },
+             {
+               "Name": "GrossUnitPrice",
+               "Value": ""
+             },
+             {
+               "Name": "IdentificationNumber",
+               "Value": ""
+             },
+             {
+               "Name": "LastName",
+               "Value": ""
+             },
+             {
+               "Name": "Country",
+               "Value": "Unknown"
+             },
+             {
+               "Name": "CareOf",
+               "Value": ""
+             },
+             {
+               "Name": "Description",
+               "Value": ""
+             },
+             {
+               "Name": "MerchantImageUrl",
+               "Value": ""
+             },
+             {
+               "Name": "Salutation",
+               "Value": "Unknown"
+             },
+             {
+               "Name": "City",
+               "Value": ""
+             },
+             {
+               "Name": "Description",
+               "Value": ""
+             },
+             {
+               "Name": "MarketplaceSellerId",
+               "Value": ""
+             },
+             {
+               "Name": "Email",
+               "Value": ""
+             },
+             {
+               "Name": "FirstName",
+               "Value": ""
+             },
+             {
+               "Name": "Country",
+               "Value": "Unknown"
+             },
+             {
+               "Name": "CareOf",
+               "Value": ""
+             },
+             {
+               "Name": "Quantity",
+               "Value": ""
+             },
+             {
+               "Name": "SummaryImageUrl",
+               "Value": ""
+             },
+             {
+               "Name": "IdentificationNumber",
+               "Value": ""
+             },
+             {
+               "Name": "CustomerNumber",
+               "Value": ""
+             },
+             {
+               "Name": "MobilePhone",
+               "Value": ""
+             },
+             {
+               "Name": "StreetNumber",
+               "Value": ""
+             },
+             {
+               "Name": "Url",
+               "Value": ""
+             },
+             {
+               "Name": "Quantity",
+               "Value": ""
+             },
+             {
+               "Name": "BirthDate",
+               "Value": ""
+             },
+             {
+               "Name": "FirstName",
+               "Value": ""
+             },
+             {
+               "Name": "City",
+               "Value": ""
+             },
+             {
+               "Name": "Phone",
+               "Value": ""
+             },
+             {
+               "Name": "StreetNumberAdditional",
+               "Value": ""
+             },
+             {
+               "Name": "Identifier",
+               "Value": ""
+             },
+             {
+               "Name": "BankCode",
+               "Value": ""
+             },
+             {
+               "Name": "Email",
+               "Value": ""
+             },
+             {
+               "Name": "ConversationLanguage",
+               "Value": "Unknown"
+             },
+             {
+               "Name": "MobilePhone",
+               "Value": ""
+             },
+             {
+               "Name": "StreetNumber",
+               "Value": ""
+             },
+             {
+               "Name": "UnitCode",
+               "Value": ""
+             }
+           ]
+         }
+       ]
+     }
+   
+ }

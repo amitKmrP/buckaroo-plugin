@@ -23,76 +23,61 @@ const secretKey = process.env.SECRETE_KEY;
 
 // const ipAdd=request.request();
 
-// data initialization
-
-let staticData = {
-  "ClientIP": {
-    "Type": 0,
-    "Address": "223.187.142.198"
-  },
-  "ReturnURL": "https://google.com",
-  "ReturnURLCancel": "https://google.com",
-  "ReturnURLError": "https://google.com",
-  "ReturnURLReject": "https://google.com",
-  "Invoice": "kjhkj98798678hjkghjhg",
-  "Description": "test",
+var staticData = {
+  "AmountDebit": 10.0,
   "Currency": "EUR",
-  "Amount": 8.0,
-  "AmountCredit": 9.0,
-  "OriginalTransactionKey": "iuyui76758jhgkg",
-  "OriginalTransactionReference": {
-    "Type": "refrence",
-    "Reference": "iuyui76758jhgkg"
-  },
-  "ContinueOnIncomplete": 0,
-  "ClientUserAgent": "Chrome",
-  "PushURL": "https://facebook.com",
-  "PushURLFailure": "https://expressjs.com/",
+  "Invoice": "BATCHA12455110000",
+  "Description": "124551 BATCHA12455110000",
+  "StartRecurrent": "True",
+  "Culture": "nl-NL",
   "Services": {
-    "Global": [
-      {
-        "Name": "Transaction",
-        "GroupType": "1",
-        "GroupID": "123",
-        "Value": "sample string 4"
-      }
-    ],
-    "ServiceList": [
-      {
-        "Name": "AfterPay by Buckaroo",
-        "Action": "Pay",
-        "Version": 3,
-        "Parameters": [
-          {
-            "Name": "sample string 1",
-            "GroupType": "sample string 2",
-            "GroupID": "sample string 3",
-            "Value": "sample string 4"
-          }
-        ]
-      },
-      
-    ]
-  },
-  "CustomParameters": {
-    "List": [
-      {
-        "Name": "test",
-        "Value": "sample string 2"
-      }
-    ]
-  },
-  "AdditionalParameters": {
-    "List": [
-      {
-        "Name": "sample string 1",
-        "Value": "sample string 2"
-      },
-      {
-        "Name": "sample string 1",
-        "Value": "sample string 2"
-      }
-    ]
+     "ServiceList": [
+        {
+           "Name": "CreditManagement3",
+           "Action": "CreateCombinedInvoice",
+           "Parameters": [
+              {
+                 "Name": "InvoiceAmount",
+                 "Value": "10.00"
+              },
+              {
+                 "Name": "InvoiceDate",
+                 "Value": "2020-02-10"
+              },
+              {
+                 "Name": "DueDate",
+                 "Value": "2020-10-03"
+              },
+              {
+                 "Name": "SchemeKey",
+                 "Value": "DefaultNone"
+              },
+              {
+                 "Name": "Code",
+                 "GroupType": "Debtor",
+                 "Value": "JanVanPietersen123"
+              }
+           ]
+        },
+        {
+           "Name": "SepaDirectDebit",
+           "Action": "Pay",
+           "Parameters": [
+              {
+                 "Name": "customeraccountname",
+                 "Value": "John Smith"
+              },
+              {
+                 "Name": "CustomerIBAN",
+                 "Value": "NL32INGB00000XXXXX"
+              },
+              {
+                 "Name": "CollectDate",
+                 "Value": "2020-04-03"
+              }
+           ]
+        }
+     ]
   }
 };
 
@@ -109,15 +94,13 @@ const authHeader = BuckarooHmac.GetAuthHeader(requestUri, websiteKey, secretKey,
    axios.defaults.headers.post['Content-Type'] = 'application/json';
 
    // Payment gateway api test
-
    var resData;
    async function pay() {
       return await axios({
          method: httpMethod,         
          url: requestUri,
          data: postContent,
-         timeout: 3000,
-         responseType: 'json'
+         timeout: 3000       
       }).then((response) => {
          console.log(response);
          resData = response;
